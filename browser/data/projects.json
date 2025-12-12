@@ -1,0 +1,15 @@
+{
+  "projects": [
+    {
+      "number": "001",
+      "client": "Skanderborg Festival",
+      "location": "Skanderborg",
+      "title": "EGGS",
+      "id": 1,
+      "image": "/images/projects/1.jpg",
+      "description": "Æg til festival",
+      "year": "2024",
+      "category": "Festival - Telt"
+    }
+  ]
+}

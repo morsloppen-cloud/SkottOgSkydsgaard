@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: morsloppen-cloud/SkottOgSkydsgaard
+  branch: main
+
+media_folder: "public/images/projects"
+public_folder: "/images/projects"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    files:
+      - label: "Project List"
+        name: "projects"
+        file: "public/data/projects.json"
+        fields:
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number", value_type: "int" }
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Client", name: "client", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Main Image", name: "image", widget: "image" }
+              - { label: "Extra Images", name: "extraImages", widget: "list", field: { label: "Image", name: "image", widget: "image" }, required: false }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Link", name: "link", widget: "string", required: false }
