@@ -19,7 +19,7 @@ export class ProjectService {
             image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
             extraImages: [
                 "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop",
-                "https://images.unsplash.com/photo-1620641788421-7a1c36f13758?q=80&w=2500&auto=format&fit=crop"
+                "https://images.unsplash.com/photo-1545558014-8692077e9b5c?q=80&w=2500&auto=format&fit=crop"
             ],
             description: "A futuristic exploration of light and shadow in a digital 3D space.",
             link: "#"

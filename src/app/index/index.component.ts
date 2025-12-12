@@ -18,11 +18,11 @@ import { gsap } from 'gsap';
             <!-- Fixed Header -->
             <div class="fixed top-24 left-0 w-full bg-[#f5f5f5] z-20 border-b border-black px-6 md:px-12 pb-4 pt-4 mt-[-40px]">
                 <div class="w-full mx-auto grid grid-cols-12 gap-4 text-[10px] md:text-xs font-mono uppercase tracking-widest">
-                    <div class="col-span-1">No.</div>
-                    <div class="col-span-3 md:col-span-2">Office</div>
-                    <div class="col-span-4 md:col-span-4">Project</div>
-                    <div class="hidden md:block md:col-span-2">Country</div>
-                    <div class="hidden md:block md:col-span-1">Year</div>
+                    <div class="col-span-1">ID.</div>
+                    <div class="col-span-3 md:col-span-2">Hvem?</div>
+                    <div class="col-span-4 md:col-span-4">Projekt</div>
+                    <div class="hidden md:block md:col-span-2">Hvor?</div>
+                    <div class="hidden md:block md:col-span-1">Hvornår?</div>
                     <div class="col-span-4 md:col-span-2 text-right md:text-left">Type</div>
                 </div>
             </div>
@@ -46,7 +46,7 @@ import { gsap } from 'gsap';
             
             <!-- Loading Indicator -->
             <div class="py-24 flex justify-center text-black/20 font-mono text-xs uppercase tracking-widest">
-                Scroll to load
+                Scroll for at se flere
             </div>
         </div>
     </div>

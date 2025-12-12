@@ -38,8 +38,9 @@ import { gsap } from 'gsap';
                     </div>
                 </div>
 
-                <div class="flex justify-end items-end pt-12 text-[10px] text-black/40">
+                <div class="flex flex-col items-end pt-12 text-[10px] text-black/40 gap-4">
                     <a href="https://www.instagram.com/skoett_og_skydsgaard/" target="_blank" class="text-sm font-bold text-black border-b border-black hover:text-black/60 hover:border-black/60 transition-all">INSTAGRAM</a>
+                    <a href="https://www.facebook.com/profile.php?id=61574216114660" target="_blank" class="text-sm font-bold text-black border-b border-black hover:text-black/60 hover:border-black/60 transition-all">FACEBOOK</a>
                 </div>
             </div>
 

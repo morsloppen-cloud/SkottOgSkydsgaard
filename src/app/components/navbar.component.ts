@@ -13,19 +13,20 @@ import { StateService } from '../services/state.service';
       
       <!-- Left: About -->
       <div class="flex-1 flex justify-start font-mono text-sm tracking-widest z-50 pointer-events-auto">
-          <button (click)="state.toggleAbout()" class="hover:opacity-50 transition-opacity uppercase">About</button>
+          <button (click)="state.toggleAbout()" class="hover:opacity-50 transition-opacity uppercase">Om os</button>
       </div>
 
       <!-- Center: Logo (Visible on all screens, centered) -->
-      <div (click)="reset()" class=" z-51 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-xl tracking-tighter uppercase font-sans cursor-pointer hover:opacity-50 whitespace-nowrap z-40 pointer-events-auto">
-          <!-- Short logo on mobile (SVG), full text on desktop -->
-          <img src="/Skott_skydsgaard_rund.svg" alt="Skøtt & Skydsgaard" class="h-12 w-auto md:hidden">
+      <div (click)="reset()" class=" z-[100] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-xl tracking-tighter uppercase font-sans cursor-pointer hover:opacity-50 whitespace-nowrap z-40 pointer-events-auto flex items-center gap-3">
+          <!-- Logo (Visible on all screens) -->
+          <img src="Skott_skydsgaard_rund.svg" alt="Skøtt & Skydsgaard" class="h-12 w-auto">
+          <!-- Text (Visible on desktop) -->
           <span class="hidden md:block">SKØTT & SKYDSGAARD</span>
       </div>
 
       <!-- Right: Index -->
       <div class="flex-1 flex justify-end font-mono text-sm tracking-widest z-50 pointer-events-auto">
-          <a routerLink="/index" routerLinkActive="opacity-50" class="hover:opacity-50 transition-opacity uppercase">Index</a>
+          <a routerLink="/index" routerLinkActive="opacity-50" class="hover:opacity-50 transition-opacity uppercase">Portfolio</a>
       </div>
     </nav>
   `

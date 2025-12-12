@@ -23,27 +23,31 @@ import { gsap } from 'gsap';
                 <h2 class="text-4xl md:text-6xl font-bold font-sans mb-8 leading-[0.9] tracking-tight">{{ project()?.title }}</h2>
                 
                 <!-- Gallery Section -->
-                <div class="relative w-full aspect-video bg-zinc-800 mb-8 overflow-hidden group select-none">
-                     <img [src]="currentImage()" class="w-full h-full object-cover transition-opacity duration-300">
-                     
-                     <!-- Navigation Controls -->
-                     <div *ngIf="hasMultipleImages()" class="absolute inset-0 flex items-center justify-between px-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <button (click)="prevImage($event)" class="w-10 h-10 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-white hover:text-black transition-colors">
-                            ←
-                        </button>
-                        <button (click)="nextImage($event)" class="w-10 h-10 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-white hover:text-black transition-colors">
-                            →
-                        </button>
+                <div class="mb-8">
+                     <!-- Main Image -->
+                     <div class="relative w-full aspect-video bg-zinc-800 overflow-hidden group select-none mb-4">
+                         <img [src]="currentImage()" class="w-full h-full object-cover transition-opacity duration-300">
+                         
+                         <!-- Navigation Controls (Always Visible) -->
+                         <div *ngIf="hasMultipleImages()" class="absolute inset-0 flex items-center justify-between px-4 pointer-events-none">
+                            <button (click)="prevImage($event)" class="pointer-events-auto w-10 h-10 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-white hover:text-black transition-colors backdrop-blur-sm">
+                                ←
+                            </button>
+                            <button (click)="nextImage($event)" class="pointer-events-auto w-10 h-10 rounded-full bg-black/50 text-white flex items-center justify-center hover:bg-white hover:text-black transition-colors backdrop-blur-sm">
+                                →
+                            </button>
+                         </div>
                      </div>
 
-                     <!-- Pagination Dots -->
-                     <div *ngIf="hasMultipleImages()" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                     <!-- Thumbnails -->
+                     <div *ngIf="hasMultipleImages()" class="flex flex-wrap gap-2">
                         <div *ngFor="let img of allImages(); let i = index" 
-                             class="w-2 h-2 rounded-full transition-colors cursor-pointer"
-                             [class.bg-white]="currentImageIndex() === i"
-                             [class.bg-white-20]="currentImageIndex() !== i"
-                             [class.bg-opacity-50]="currentImageIndex() !== i"
-                             (click)="setIndex(i, $event)">
+                             (click)="setIndex(i, $event)"
+                             class="h-16 aspect-video cursor-pointer overflow-hidden opacity-50 hover:opacity-100 transition-all border-2"
+                             [class.border-white]="currentImageIndex() === i"
+                             [class.border-transparent]="currentImageIndex() !== i"
+                             [class.opacity-100]="currentImageIndex() === i">
+                             <img [src]="img" class="w-full h-full object-cover">
                         </div>
                      </div>
                 </div>
@@ -65,11 +69,6 @@ import { gsap } from 'gsap';
                      </div>
                 </div>
 
-                <div class="mt-auto pt-12">
-                     <a [href]="project()?.link" class="inline-block px-8 py-4 border border-white/20 rounded-full hover:bg-white hover:text-black transition-all font-mono text-sm uppercase tracking-wider">
-                         Visit Live Site
-                     </a>
-                </div>
             </div>
         </div>
     </div>
