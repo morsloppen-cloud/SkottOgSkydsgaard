@@ -1,0 +1,19 @@
+:host {
+    display: block;
+}
+
+/* Stamp Effect */
+.about-card {
+    --r: 8px;
+    /* radius of the holes */
+    background: #fdfdfd;
+    /* The mask creates the "holes" along the edge */
+    mask:
+        radial-gradient(var(--r) at 50% calc(100% - var(--r) + 2px), #0000 98%, #000) 50% calc(100% + var(--r) - 2px)/calc(3 * var(--r)) calc(100% - 2px) repeat-x,
+        radial-gradient(var(--r) at 50% calc(var(--r) - 2px), #0000 98%, #000) 50% calc(-1 * var(--r) + 2px)/calc(3 * var(--r)) calc(100% - 2px) repeat-x,
+        radial-gradient(var(--r) at calc(100% - var(--r) + 2px) 50%, #0000 98%, #000) calc(100% + var(--r) - 2px) 50%/calc(100% - 2px) calc(3 * var(--r)) repeat-y,
+        radial-gradient(var(--r) at calc(var(--r) - 2px) 50%, #0000 98%, #000) calc(-1 * var(--r) + 2px) 50%/calc(100% - 2px) calc(3 * var(--r)) repeat-y;
+
+    /* Fallback box shadow for a slight depth */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}

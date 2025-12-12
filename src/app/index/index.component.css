@@ -1,0 +1,4 @@
+/* Custom scrollbar override for light mode index if needed, though global style is dark */
+:host {
+    display: block;
+}
