@@ -71,6 +71,21 @@
       "description": "Vi har udført eksklusive toiletrum med kompromisløs funktionalitet og æstetik – indvendigt i rustfrit stål for nem rengøring og udvendigt beklædt med specialfremstillede kobberelementer og tombaktag. Elegant, robust og gennemtænkt ned til mindste detalje.",
       "year": "2025",
       "category": "Industrial"
+    },
+    {
+      "showOnMainPage": true,
+      "extraImages": [
+        "/images/projects/skilt_2.png"
+      ],
+      "number": "004",
+      "client": "Skøtt og Skydsgaard",
+      "location": "Mørke",
+      "title": "CNC skilt",
+      "id": 4,
+      "image": "/images/projects/skilt.png",
+      "description": "Mens andre gik amok i Black Friday-tilbud, gik vi amok i… kalibrering. Resultatet? En ny CNC-maskine, et spritnyt udendørsskilt og drenge på gården, der nu både kan snedkerere og tale flydende robotsprog🤖🪚",
+      "year": "2025",
+      "category": "Logo, CNC"
     }
   ]
 }
