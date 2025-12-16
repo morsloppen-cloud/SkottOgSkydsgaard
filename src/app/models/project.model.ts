@@ -5,6 +5,7 @@ export interface Project {
     image: string;
     extraImages?: string[];
     description: string;
+    showOnMainPage: boolean;
     link?: string;
     number: string;
     client?: string;

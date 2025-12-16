@@ -2,6 +2,11 @@
     display: block;
 }
 
+/* Hide logos initially to prevent flash before animation */
+.logo-hidden {
+    opacity: 0;
+}
+
 /* Stamp Effect */
 .about-card {
     --r: 8px;

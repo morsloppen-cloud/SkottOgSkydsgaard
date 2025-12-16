@@ -60,9 +60,12 @@ export class IndexComponent implements OnInit, AfterViewInit {
     constructor(private projectService: ProjectService, private state: StateService) { }
 
     ngOnInit() {
-        this.projectService.getProjects().subscribe(data => {
-            this.allProjects = data;
-            this.loadInitial();
+        this.projectService.getProjects().subscribe({
+            next: (data) => {
+                this.allProjects = data;
+                this.loadInitial();
+            },
+            error: (err) => console.error('Error loading projects in Index:', err)
         });
     }
 
@@ -72,12 +75,15 @@ export class IndexComponent implements OnInit, AfterViewInit {
     }
 
     loadInitial() {
+        console.log('Loading initial. All Projects:', this.allProjects.length);
         // Start with a few sets to fill screen
         for (let i = 0; i < 3; i++) {
             this.appendBatch(false);
         }
         // Animate them in
         setTimeout(() => {
+            const targets = document.querySelectorAll('.project-row');
+            console.log('Animating initial rows. Found targets:', targets.length);
             gsap.to('.project-row', {
                 opacity: 1,
                 y: 0,

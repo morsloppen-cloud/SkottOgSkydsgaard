@@ -9,7 +9,7 @@ import { StateService } from '../services/state.service';
     imports: [CommonModule, RouterModule],
     template: `
     <nav class="fixed top-0 left-0 w-full flex justify-between items-center px-6 md:px-12 py-6 z-50 pointer-events-none"
-         [ngClass]="isIndex ? 'bg-[#f5f5f5] text-black' : 'text-mukko-white'">
+         [ngClass]="isIndex ? 'bg-[#f5f5f5] text-[black]' : 'text-mukko-white'">
       
       <!-- Left: About -->
       <div class="flex-1 flex justify-start font-mono text-sm tracking-widest z-50 pointer-events-auto">

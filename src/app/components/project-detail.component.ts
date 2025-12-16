@@ -54,17 +54,17 @@ import { gsap } from 'gsap';
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 border-t border-white/10 pt-8">
                      <div class="col-span-2">
-                         <h3 class="font-mono text-xs text-mukko-gray uppercase mb-4">Description</h3>
+                         <h3 class="font-mono text-xs text-mukko-gray uppercase mb-4">Beskrivelse</h3>
                          <p class="text-lg font-light leading-relaxed text-white/80">{{ project()?.description }}</p>
                      </div>
                      <div>
-                        <h3 class="font-mono text-xs text-mukko-gray uppercase mb-4">Client</h3>
+                        <h3 class="font-mono text-xs text-mukko-gray uppercase mb-4">Hvem?</h3>
                         <p class="text-sm font-mono text-white/60">{{ project()?.client || 'Unknown Client' }}</p>
                         
-                        <h3 class="font-mono text-xs text-mukko-gray uppercase mb-4 mt-8">Year</h3>
+                        <h3 class="font-mono text-xs text-mukko-gray uppercase mb-4 mt-8">Hvornår?</h3>
                         <p class="text-sm font-mono text-white/60">{{ project()?.year || '2025' }}</p>
 
-                         <h3 class="font-mono text-xs text-mukko-gray uppercase mb-4 mt-8">Location</h3>
+                         <h3 class="font-mono text-xs text-mukko-gray uppercase mb-4 mt-8">Hvor?</h3>
                         <p class="text-sm font-mono text-white/60">{{ project()?.location || 'Unknown' }}</p>
                      </div>
                 </div>
