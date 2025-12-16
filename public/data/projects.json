@@ -3,13 +3,13 @@
     {
       "showOnMainPage": true,
       "extraImages": [
-        "/images/projects/0.jpg",
-        "/images/projects/2.jpg",
-        "/images/projects/3.jpg",
-        "/images/projects/4.jpg",
-        "/images/projects/5.jpg",
-        "/images/projects/air1.jpg",
-        "/images/projects/air2.jpg"
+        "/SkottOgSkydsgaard/images/projects/0.jpg",
+        "/SkottOgSkydsgaard/images/projects/2.jpg",
+        "/SkottOgSkydsgaard/images/projects/3.jpg",
+        "/SkottOgSkydsgaard/images/projects/4.jpg",
+        "/SkottOgSkydsgaard/images/projects/5.jpg",
+        "/SkottOgSkydsgaard/images/projects/air1.jpg",
+        "/SkottOgSkydsgaard/images/projects/air2.jpg"
       ],
       "number": "001",
       "client": "Skanderborg Festival",
@@ -20,6 +20,23 @@
       "description": "Æg til festival",
       "year": "2024",
       "category": "Festival - Telt"
+    },
+    {
+      "showOnMainPage": true,
+      "extraImages": [
+        "/SkottOgSkydsgaard/images/projects/gavl_1.jpg",
+        "/SkottOgSkydsgaard/images/projects/gavl_3.jpg",
+        "/SkottOgSkydsgaard/images/projects/gavl_4.jpg",
+        "/SkottOgSkydsgaard/images/projects/gavl_5.jpg"
+      ],
+      "number": "002",
+      "client": "Unknown",
+      "location": "DK",
+      "title": "Gavl",
+      "id": 2,
+      "image": "/SkottOgSkydsgaard/images/projects/gavl_2.jpg",
+      "year": "2025",
+      "category": "Home improvement"
     }
   ]
 }
