@@ -2,9 +2,11 @@ backend:
   name: github
   repo: morsloppen-cloud/SkottOgSkydsgaard
   branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 media_folder: "public/images/projects"
-public_folder: "/images/projects"
+public_folder: "/SkottOgSkydsgaard/images/projects"
 
 collections:
   - name: "projects"
@@ -18,6 +20,7 @@ collections:
             name: "projects"
             widget: "list"
             fields:
+              - { label: "Show on main page", name: "showOnMainPage", widget: "boolean", default: true }
               - { label: "ID", name: "id", widget: "number", value_type: "int" }
               - { label: "Number", name: "number", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
