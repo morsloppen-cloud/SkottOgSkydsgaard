@@ -39,7 +39,7 @@
       "category": "Home improvement"
     },
     {
-      "showOnMainPage": true,
+      "showOnMainPage": false,
       "extraImages": [
         "/images/projects/mcdonalds-skur_2.jpg",
         "/images/projects/mcdonalds-skur_3.jpg",
