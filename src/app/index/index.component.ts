@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, QueryList, ViewChildren, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, OnInit, HostListener, QueryList, ViewChildren, ElementRef, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectService } from '../services/project.service';
 import { StateService } from '../services/state.service';
@@ -57,12 +57,13 @@ export class IndexComponent implements OnInit, AfterViewInit {
     displayProjects: Project[] = [];
     @ViewChildren('rowItem') rowItems!: QueryList<ElementRef>;
 
-    constructor(private projectService: ProjectService, private state: StateService) { }
+    constructor(private projectService: ProjectService, private state: StateService, private cdr: ChangeDetectorRef) { }
 
     ngOnInit() {
         this.projectService.getProjects().subscribe({
             next: (data) => {
                 this.allProjects = data;
+                this.displayProjects = []; // Clear current
                 this.loadInitial();
             },
             error: (err) => console.error('Error loading projects in Index:', err)
@@ -70,51 +71,17 @@ export class IndexComponent implements OnInit, AfterViewInit {
     }
 
     ngAfterViewInit() {
-        // Initial animation handled in loadInitial/changes? 
-        // Actually ViewChildren changes might be better to observe, but straightforward batch load is easier.
-    }
-
-    loadInitial() {
-        console.log('Loading initial. All Projects:', this.allProjects.length);
-        // Start with a few sets to fill screen
-        for (let i = 0; i < 3; i++) {
-            this.appendBatch(false);
-        }
-        // Animate them in
-        setTimeout(() => {
-            const targets = document.querySelectorAll('.project-row');
-            console.log('Animating initial rows. Found targets:', targets.length);
-            gsap.to('.project-row', {
-                opacity: 1,
-                y: 0,
-                duration: 0.5,
-                stagger: 0.05,
-                ease: 'power2.out'
+        this.rowItems.changes.subscribe(list => {
+            console.log('Index rows changed. Count:', list.length);
+            // Animate only the new rows that are hidden
+            const newRows = document.querySelectorAll('.project-row');
+            const hiddenRows: Element[] = [];
+            newRows.forEach(el => {
+                const style = window.getComputedStyle(el);
+                if (style.opacity === '0') hiddenRows.push(el);
             });
-        }, 100);
-    }
 
-    loadMore() {
-        this.appendBatch(true);
-    }
-
-    appendBatch(animate: boolean) {
-        const startIdx = this.displayProjects.length;
-        // Clone logic for infinite scroll
-        const batch = this.allProjects.map(p => ({ ...p, id: Math.random() }));
-        this.displayProjects.push(...batch);
-
-        if (animate) {
-            setTimeout(() => {
-                // Animate only the new rows
-                const newRows = document.querySelectorAll('.project-row'); // simplistic selector, ideally scope to new
-                // Filter to ones that are still hidden (opacity 0)
-                const hiddenRows: Element[] = [];
-                newRows.forEach(el => {
-                    const style = window.getComputedStyle(el);
-                    if (style.opacity === '0') hiddenRows.push(el);
-                });
-
+            if (hiddenRows.length > 0) {
                 gsap.to(hiddenRows, {
                     opacity: 1,
                     y: 0,
@@ -122,8 +89,29 @@ export class IndexComponent implements OnInit, AfterViewInit {
                     stagger: 0.05,
                     ease: 'power2.out'
                 });
-            }, 50);
+            }
+        });
+    }
+
+    loadInitial() {
+        // Start with a few sets to fill screen
+        for (let i = 0; i < 3; i++) {
+            this.appendBatch();
         }
+        this.cdr.detectChanges(); // Trigger change detection to update ViewChildren
+    }
+
+    loadMore() {
+        this.appendBatch();
+    }
+
+    appendBatch() {
+        const startIdx = this.displayProjects.length;
+        // Clone logic for infinite scroll
+        const batch = this.allProjects.map(p => ({ ...p, id: Math.random() }));
+        this.displayProjects.push(...batch);
+        // Force change detection to trigger ViewChildren changes event immediately
+        this.cdr.detectChanges();
     }
 
     openProject(project: Project) {
