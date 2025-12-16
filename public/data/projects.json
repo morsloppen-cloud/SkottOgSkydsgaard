@@ -54,6 +54,23 @@
       "description": "Vi har stået for opførelsen af et lækkert og solidt skur – funktionelt, veludført og bygget i ordentlige materialer, så det både holder og ser godt ud.\nJV Construction forvandler rå jord til færdige byggerier – fra McDonald’s drive-in til solidt udendørs træarbejde som skure, plankeværk og containergårde. Effektivt, grundigt og godt håndværk.",
       "year": "2025",
       "category": "Skur, B2B"
+    },
+    {
+      "showOnMainPage": true,
+      "extraImages": [
+        "/images/projects/smedetoilet1.jpg",
+        "/images/projects/smedetoilet3.jpg",
+        "/images/projects/smedetoilet4.jpg"
+      ],
+      "number": "004",
+      "client": "Smedemester Carsten",
+      "location": "Ofelia Plads, København",
+      "title": "Smedetoilet",
+      "id": 4,
+      "image": "/images/projects/smedetoilet2.jpg",
+      "description": "Vi har udført eksklusive toiletrum med kompromisløs funktionalitet og æstetik – indvendigt i rustfrit stål for nem rengøring og udvendigt beklædt med specialfremstillede kobberelementer og tombaktag. Elegant, robust og gennemtænkt ned til mindste detalje.",
+      "year": "2025",
+      "category": "Industrial"
     }
   ]
 }
