@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     ngOnInit(): void {
         this.projectService.getProjects().subscribe({
             next: (data) => {
-                this.projects = data.filter(project => project.showOnMainPage || true);
+                this.projects = data.filter(project => project.showOnMainPage);
                 this.cdr.detectChanges(); // Force update so ViewChildren are found
             },
             error: (err) => console.error('Error loading projects in Home:', err)
