@@ -3,13 +3,13 @@
     {
       "showOnMainPage": true,
       "extraImages": [
-        "/SkottOgSkydsgaard/images/projects/0.jpg",
-        "/SkottOgSkydsgaard/images/projects/2.jpg",
-        "/SkottOgSkydsgaard/images/projects/3.jpg",
-        "/SkottOgSkydsgaard/images/projects/4.jpg",
-        "/SkottOgSkydsgaard/images/projects/5.jpg",
-        "/SkottOgSkydsgaard/images/projects/air1.jpg",
-        "/SkottOgSkydsgaard/images/projects/air2.jpg"
+        "/images/projects/0.jpg",
+        "/images/projects/2.jpg",
+        "/images/projects/3.jpg",
+        "/images/projects/4.jpg",
+        "/images/projects/5.jpg",
+        "/images/projects/air1.jpg",
+        "/images/projects/air2.jpg"
       ],
       "number": "001",
       "client": "Skanderborg Festival",
@@ -20,6 +20,40 @@
       "description": "Æg til festival",
       "year": "2024",
       "category": "Festival - Telt"
+    },
+    {
+      "showOnMainPage": true,
+      "extraImages": [
+        "/images/projects/gavl_1.jpg",
+        "/images/projects/gavl_3.jpg",
+        "/images/projects/gavl_4.jpg",
+        "/images/projects/gavl_5.jpg"
+      ],
+      "number": "002",
+      "client": "Unknown",
+      "location": "DK",
+      "title": "Gavl",
+      "id": 2,
+      "image": "/images/projects/gavl_2.jpg",
+      "year": "2025",
+      "category": "Home improvement"
+    },
+    {
+      "showOnMainPage": true,
+      "extraImages": [
+        "/images/projects/mcdonalds-skur_2.jpg",
+        "/images/projects/mcdonalds-skur_3.jpg",
+        "/images/projects/mcdonalds-skur_4.jpg"
+      ],
+      "number": "003",
+      "client": "JV Totalentreprise",
+      "location": "Brabrand, Aarhus",
+      "title": "McDonald's skur",
+      "id": 3,
+      "image": "/images/projects/mcdonalds-skur_1.jpg",
+      "description": "Vi har stået for opførelsen af et lækkert og solidt skur – funktionelt, veludført og bygget i ordentlige materialer, så det både holder og ser godt ud.\nJV Construction forvandler rå jord til færdige byggerier – fra McDonald’s drive-in til solidt udendørs træarbejde som skure, plankeværk og containergårde. Effektivt, grundigt og godt håndværk.",
+      "year": "2025",
+      "category": "Skur, B2B"
     }
   ]
 }
