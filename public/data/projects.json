@@ -37,6 +37,23 @@
       "image": "/images/projects/gavl_2.jpg",
       "year": "2025",
       "category": "Home improvement"
+    },
+    {
+      "showOnMainPage": true,
+      "extraImages": [
+        "/images/projects/mcdonalds-skur_2.jpg",
+        "/images/projects/mcdonalds-skur_3.jpg",
+        "/images/projects/mcdonalds-skur_4.jpg"
+      ],
+      "number": "003",
+      "client": "JV Totalentreprise",
+      "location": "Brabrand, Aarhus",
+      "title": "McDonald's skur",
+      "id": 3,
+      "image": "/images/projects/mcdonalds-skur_1.jpg",
+      "description": "Vi har stået for opførelsen af et lækkert og solidt skur – funktionelt, veludført og bygget i ordentlige materialer, så det både holder og ser godt ud.\nJV Construction forvandler rå jord til færdige byggerier – fra McDonald’s drive-in til solidt udendørs træarbejde som skure, plankeværk og containergårde. Effektivt, grundigt og godt håndværk.",
+      "year": "2025",
+      "category": "Skur, B2B"
     }
   ]
 }
