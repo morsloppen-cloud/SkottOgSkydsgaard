@@ -1,6 +1,7 @@
 {
   "projects": [
     {
+      "showOnMainPage": true,
       "number": "001",
       "client": "Skanderborg Festival",
       "location": "Skanderborg",
