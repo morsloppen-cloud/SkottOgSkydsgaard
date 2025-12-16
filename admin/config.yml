@@ -18,10 +18,10 @@ collections:
             name: "projects"
             widget: "list"
             fields:
+              - { label: "Title", name: "title", widget: "string" }
               - { label: "Show on main page", name: "showOnMainPage", widget: "boolean", default: true }
               - { label: "ID", name: "id", widget: "number", value_type: "int" }
               - { label: "Number", name: "number", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
               - { label: "Category", name: "category", widget: "string" }
               - { label: "Client", name: "client", widget: "string" }
               - { label: "Location", name: "location", widget: "string" }
