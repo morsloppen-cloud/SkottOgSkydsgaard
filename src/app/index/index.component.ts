@@ -72,7 +72,7 @@ export class IndexComponent implements OnInit, AfterViewInit {
 
     ngAfterViewInit() {
         this.rowItems.changes.subscribe(list => {
-            console.log('Index rows changed. Count:', list.length);
+            // console.log('Index rows changed. Count:', list.length);
             // Animate only the new rows that are hidden
             const newRows = document.querySelectorAll('.project-row');
             const hiddenRows: Element[] = [];

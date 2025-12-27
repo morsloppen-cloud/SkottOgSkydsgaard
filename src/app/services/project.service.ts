@@ -11,9 +11,9 @@ export class ProjectService {
     private http = inject(HttpClient);
 
     getProjects(): Observable<Project[]> {
-        return this.http.get<{ projects: Project[] }>('data/projects.json').pipe(
+        return this.http.get<{ projects: Project[] }>(`data/projects.json?t=${Date.now()}`).pipe(
             map(response => {
-                console.log('ProjectService Raw Response:', response);
+                // console.log('ProjectService Raw Response:', response);
                 return response.projects;
             })
         );

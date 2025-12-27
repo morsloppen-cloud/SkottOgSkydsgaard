@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
 
         // Listen for changes to the project list
         this.projectItems.changes.subscribe(list => {
-            console.log('ViewChildren changes detected. Count:', list.length);
+            // console.log('ViewChildren changes detected. Count:', list.length);
             if (list.length > 0) {
                 this.initProjectAnimations();
             }
@@ -96,7 +96,7 @@ export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
     }
 
     initProjectAnimations(): void {
-        console.log('Animating projects. Items:', this.projectItems.length);
+        // console.log('Animating projects. Items:', this.projectItems.length);
         if (this.projectItems.length === 0) return;
 
         this.projectItems.forEach((item, index) => {
