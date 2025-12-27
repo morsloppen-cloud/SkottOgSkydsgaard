@@ -25,7 +25,7 @@ import { gsap } from 'gsap';
                     <div>
                         <h4 class="text-black/50 mb-2">Kontakt</h4>
                         <a href="tel:21183808" class="block hover:text-black/60 transition-colors">21 18 38 08</a>
-                        <a href="mailto:Skoettskydsgaard@gmail.com" class="block hover:text-black/60 transition-colors">Skoettskydsgaard@gmail.com</a>
+                        <a href="mailto:info@skaps.dk" class="block hover:text-black/60 transition-colors">info@skaps.dk</a>
                         <div class="mt-4">
                             <p>Vesterskovgårdsvej 10</p>
                             <p>Mørke, Denmark</p>
