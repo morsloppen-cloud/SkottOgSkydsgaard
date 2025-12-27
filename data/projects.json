@@ -35,7 +35,6 @@
       "title": "Gavl",
       "id": 2,
       "image": "images/projects/gavl_2.jpg",
-      "description": "Gavl",
       "year": "2025",
       "category": "Home improvement"
     },
@@ -78,11 +77,11 @@
       "extraImages": [
         "images/projects/skilt_2.png"
       ],
-      "number": "005",
+      "number": "004",
       "client": "Skøtt og Skydsgaard",
       "location": "Mørke",
       "title": "CNC skilt",
-      "id": 5,
+      "id": 4,
       "image": "images/projects/skilt.png",
       "description": "Mens andre gik amok i Black Friday-tilbud, gik vi amok i… kalibrering. Resultatet? En ny CNC-maskine, et spritnyt udendørsskilt og drenge på gården, der nu både kan snedkerere og tale flydende robotsprog🤖🪚",
       "year": "2025",
