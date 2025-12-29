@@ -3,23 +3,28 @@
     {
       "showOnMainPage": true,
       "extraImages": [
-        "images/projects/0.jpg",
+        "/images/projects/æg-skøtt-skydsgaard11.jpg",
         "images/projects/2.jpg",
-        "images/projects/3.jpg",
+        "/images/projects/æg-skøtt-skydsgaard.jpg",
         "images/projects/4.jpg",
-        "images/projects/5.jpg",
-        "images/projects/air1.jpg",
-        "images/projects/air2.jpg"
+        "/images/projects/æg-skøtt-skydsgaard-4-.jpg",
+        "/images/projects/æg-skøtt-skydsgaard-5-.jpg",
+        "images/projects/air2.jpg",
+        "/images/projects/æg-skøtt-skydsgaard-6-.jpg",
+        "/images/projects/æg-skøtt-skydsgaard-2-.jpg",
+        "/images/projects/æg-skøtt-skydsgaard-9-.jpg",
+        "/images/projects/æg-skøtt-skydsgaard-10-.jpg",
+        "/images/projects/æg-skøtt-skydsgaard-8-.jpg"
       ],
       "number": "001",
-      "client": "Skanderborg Festival",
+      "client": "SMUKfest",
       "location": "Skanderborg",
-      "title": "EGGS",
+      "title": "ÆG, SMUKfest",
       "id": 1,
-      "image": "images/projects/1.jpg",
-      "description": "Æg til festival",
-      "year": "2024",
-      "category": "Festival - Telt"
+      "image": "/images/projects/æg-skøtt-skydsgaard-3-.jpg",
+      "description": "150 nye boformer til SMUKfest udført i CNC forarbejdet støbeplade af poppel. Designet med øje for den æstetiske oplevelse både indefra og ude samt enkeltstående og i flok. Det store fokus på genanvendelse og modstandsdygtighed ses både i materialevalg, bearbejdningsprocesser og vores egen version af den klassiske svalehalesamling, som muliggør at alt kan samles og pilles ned, år efter år, med ikke andet end en gummihammer.  ",
+      "year": "2024 & 2025",
+      "category": "Design "
     },
     {
       "showOnMainPage": true,
@@ -27,17 +32,21 @@
         "images/projects/gavl_1.jpg",
         "images/projects/gavl_3.jpg",
         "images/projects/gavl_4.jpg",
-        "images/projects/gavl_5.jpg"
+        "images/projects/gavl_5.jpg",
+        "/images/projects/tag_1-skøtt-skydsgaard.jpg",
+        "/images/projects/tag_2-skøtt-skydsgaard.jpg",
+        "/images/projects/tag_3-skøtt-skydsgaard.jpg",
+        "/images/projects/tag_4-skøtt-skydsgaard.jpg"
       ],
       "number": "002",
-      "client": "Unknown",
-      "location": "DK",
-      "title": "Gavl",
+      "client": "Privatkunde",
+      "location": "Skæring Sandager, Egå ",
+      "title": "Tegltag, Egå ",
       "id": 2,
-      "image": "images/projects/gavl_2.jpg",
-      "description": "Tagprojekt i Egå",
+      "image": "/images/projects/tag_1-skøtt-skydsgaard.jpg",
+      "description": "Rådgivning, nedrivning, opretning, nyt undertag og nye teglsten. Derudover hel ny træbeklædning på gavle og udhæng, udført i varmebehandlet thermo-fyr. ",
       "year": "2025",
-      "category": "Home improvement"
+      "category": "Renovering"
     },
     {
       "showOnMainPage": true,
@@ -49,44 +58,66 @@
       "number": "003",
       "client": "JV Totalentreprise",
       "location": "Brabrand, Aarhus",
-      "title": "McDonald's skur",
+      "title": "Opbevaringsskur, McDonalds - Brabrand",
       "id": 3,
       "image": "images/projects/mcdonalds-skur_1.jpg",
-      "description": "Vi har stået for opførelsen af et lækkert og solidt skur – funktionelt, veludført og bygget i ordentlige materialer, så det både holder og ser godt ud.\nJV Construction forvandler rå jord til færdige byggerier – fra McDonald’s drive-in til solidt udendørs træarbejde som skure, plankeværk og containergårde. Effektivt, grundigt og godt håndværk.",
+      "description": "Opførelse af opbevaringsskur, containergård samt plankeværk udført for JV Construction, til nyopført McDonalds i Brabrand. ",
       "year": "2025",
-      "category": "Skur, B2B"
+      "category": "Byggeprojekt"
     },
     {
       "showOnMainPage": true,
       "extraImages": [
-        "images/projects/smedetoilet1.jpg",
-        "images/projects/smedetoilet3.jpg",
-        "images/projects/smedetoilet4.jpg"
+        "/images/projects/toiletvogn_1-skøtt-skydsgaard-2-.jpg",
+        "/images/projects/toiletvogn_2-skøtt-skydsgaard.jpg",
+        "/images/projects/smedetoilet4.jpg",
+        "/images/projects/toiletvogn_5-skøtt-skydsgaard.jpg",
+        "/images/projects/smedetoilet2.jpg",
+        "/images/projects/smedetoilet1.jpg",
+        "/images/projects/smedetoilet3.jpg"
       ],
       "number": "004",
-      "client": "Smedemester Carsten",
+      "client": "CT Stål ApS",
       "location": "Ofelia Plads, København",
-      "title": "Smedetoilet",
+      "title": "Toiletvogn, Ofelia Plads",
       "id": 4,
-      "image": "images/projects/smedetoilet2.jpg",
-      "description": "Vi har udført eksklusive toiletrum med kompromisløs funktionalitet og æstetik – indvendigt i rustfrit stål for nem rengøring og udvendigt beklædt med specialfremstillede kobberelementer og tombaktag. Elegant, robust og gennemtænkt ned til mindste detalje.",
+      "image": "/images/projects/toiletvogn_1-skøtt-skydsgaard.jpg",
+      "description": "Eksklusive toiletrum med kompromisløs funktionalitet og æstetik. Indvendigt beklædt i 2mm rustfrit ståplade for nem rengøring. Udvendigt udsmykket med italiensk specialfremstillet elementer i tombak. Elegant og robust. ",
       "year": "2025",
-      "category": "Industrial"
+      "category": "Byggeprojekt"
     },
     {
       "showOnMainPage": true,
       "extraImages": [
-        "images/projects/skilt_2.png"
+        "/images/projects/logoskilt-skøtt-skydsgaard.jpeg",
+        "/images/projects/logoskilt_1-skøtt-skydsgaard.jpg",
+        "/images/projects/logoskilt_2-skøtt-skydsgaard.jpg"
       ],
       "number": "005",
-      "client": "Skøtt og Skydsgaard",
+      "client": "Skøtt og Skydsgaard ApS",
       "location": "Mørke",
       "title": "CNC skilt",
       "id": 5,
-      "image": "images/projects/skilt.png",
-      "description": "Mens andre gik amok i Black Friday-tilbud, gik vi amok i… kalibrering. Resultatet? En ny CNC-maskine, et spritnyt udendørsskilt og drenge på gården, der nu både kan snedkerere og tale flydende robotsprog🤖🪚",
+      "image": "/images/projects/skilt.png",
+      "description": "Reklameskilt til værksted. Bearbejdet på vores nye CNC-maskine og udført i krydsfiner. Efterfølgende malet og lakeret med skibslak. ",
       "year": "2025",
-      "category": "Logo, CNC"
+      "category": "Design"
+    },
+    {
+      "showOnMainPage": true,
+      "extraImages": [
+        "/images/projects/havelåge-2-skøtt-skydsgaard.jpg",
+        "/images/projects/havelåge-skøtt-skydsgaard.jpg"
+      ],
+      "number": "006",
+      "client": "Privatkunde",
+      "location": "Rønde",
+      "title": "Havelåge, Rønde",
+      "id": 6,
+      "image": "/images/projects/havelåge-skøtt-skydsgaard.jpg",
+      "description": "Nedtagning, støbning og opførelse af ny havelåge for privatkunde. ",
+      "year": "2025",
+      "category": "Byggeprojekt"
     }
   ]
 }
